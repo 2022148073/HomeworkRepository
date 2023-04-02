@@ -17,6 +17,7 @@ hr{height: 2px; background-color: black;}
 .unselected:hover{font-weight: bolder; 
         text-decoration: underline;}
 .check_login{height: 30px; font-size: 1.1em; padding-left: 10px; padding-right: 10px; background-color: cornflowerblue; margin: 0%;}
+.check_login:hover{font-weight: bolder;}
 .signup{height: 30px; font-size: 1.1em; padding-left: 10px; padding-right: 10px; background-color: darkcyan; margin: 0%;}
 .initialization{height: 30px; font-size: 1.1em; padding-left: 10px; padding-right: 10px; background-color: red; margin: 0%;}
 .signup:hover{font-weight: bolder;}
