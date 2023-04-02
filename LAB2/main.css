@@ -6,7 +6,7 @@ div{width: 70px; height: 23px; text-align: center;
     display: inline-block;}
 .no_underline{text-decoration-line: none; color: black;}
 p{margin: 0.5%;}
-ul{padding-left: 0%;}
+ul{padding-left: 0px;}
 li{list-style-type: none; margin-left: 1.5%;}
 hr{height: 2px; background-color: black;}
 .first{margin-top: 5%; font-size: 1.5em;}
