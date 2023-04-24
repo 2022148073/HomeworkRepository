@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./main.css" type="text/css" />
+    <!--<style type="text/css">
+            h1{font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5em;
+            text-align: center;
+            }
+            div{width: 70px; height: 23px; text-align: center;
+                display: inline-block;}
+            .no_underline{text-decoration-line: none; color: black;}
+            p{margin: 0.5%;}
+            ul{padding-left: 0%}
+            li{list-style-type: none; margin-left: 1.5%;}
+            hr{height: 2px; background-color: black;}
+            .first{margin-top: 5%; font-size: 1.5em;}
+            .unselected{text-decoration: none;}
+            .selected{border-top: 2px solid; color: red; 
+                border-bottom: 2px solid; color: red;
+                font-weight: bolder;}
+            .unselected:hover{font-weight: bolder; 
+                text-decoration: underline;}
+                .check_login{height: 30px; font-size: 1.1em; padding-left: 10px; padding-right: 10px; background-color: cornflowerblue; margin: 0%;}
+            .signup{height: 30px; font-size: 1.1em; padding-left: 10px; padding-right: 10px; background-color: darkcyan; margin: 0%;}
+            .initialization{height: 30px; font-size: 1.1em; padding-left: 10px; padding-right: 10px; background-color: red; margin: 0%;}
+            .signup:hover{font-weight: bolder;}
+            .initialization:hover{font-weight: bolder;}
+
+        </style>-->
+  </head>
+
+  <body>
+    <h1>Welcome to INTERNET-PROGRAMMING SHOP</h1>
+    <div class="flex_container">
+      <div class="unselected">
+        <a class="no_underline" href="./index.html">메인페이지</a>
+      </div>
+      <div class="unselected">
+        <a class="no_underline" href="./login.html">로그인</a>
+      </div>
+      <div class="selected">
+        <a class="no_underline" href="./signup.html">회원가입</a>
+      </div>
+    </div>
+    <hr />
+    <p class="first"><strong>개인정보 (필수)</strong></p>
+    <form method="post" action="./login.html">
+      <p>
+        <label
+          ><strong>이름</strong>:
+          <input
+            type="text"
+            name="name"
+            autocomplete="on"
+            placeholder="이름을 입력하세요"
+            autofocus
+            required
+          />
+        </label>
+      </p>
+
+      <p>
+        <label
+          ><strong>생일</strong>:
+          <input type="date" name="birthday" required />
+        </label>
+      </p>
+
+      <p>
+        <strong>성별</strong>:
+        <label
+          >남
+          <input type="radio" name="gender" value="man" required />
+        </label>
+        <label
+          >여
+          <input type="radio" name="gender" value="woman" />
+        </label>
+      </p>
+
+      <p><strong>사이트를 알게 된 배경</strong></p>
+      <ul>
+        <li>
+          <label
+            >검색하다가 찾게 되어서
+            <input type="checkbox" name="ToKnow" value="search" />
+          </label>
+        </li>
+        <li>
+          <label
+            >지인 추천으로
+            <input type="checkbox" name="ToKnow" value="recommend" />
+          </label>
+        </li>
+        <li>
+          <label
+            >호기심으로
+            <input type="checkbox" name="ToKnow" value="curiosity" />
+          </label>
+        </li>
+        <li>
+          <label
+            >기타
+            <input type="checkbox" name="ToKnow" value="etc" />
+          </label>
+        </li>
+      </ul>
+
+      <p>
+        <label
+          ><strong>학년</strong>:
+          <input
+            type="number"
+            name="grade"
+            min="1"
+            max="4"
+            step="1"
+            value="1"
+          />
+        </label>
+      </p>
+
+      <p>
+        <label
+          ><strong>전화번호</strong>:
+          <input
+            type="tel"
+            name="telephone"
+            autocomplete="on"
+            placeholder="(###)###-####"
+            pattern="\(\d{3}\)\d{3}-\d{4}"
+            required
+          />
+        </label>
+      </p>
+
+      <p>
+        <label
+          ><strong>유저 아이디</strong>:
+          <input
+            type="text"
+            name="user_ID"
+            autocomplete="on"
+            placeholder="아이디를 입력하세요"
+            required
+          />
+        </label>
+      </p>
+
+      <p>
+        <label
+          ><strong>비밀번호</strong>:
+          <input
+            type="password"
+            name="user_password"
+            placeholder="비밀번호를 입력하세요"
+            required
+          />
+        </label>
+      </p>
+
+      <p>
+        <label
+          ><strong>비밀번호 확인</strong>:
+          <input
+            type="password"
+            name="check_password"
+            placeholder="비밀번호 확인"
+            required
+          />
+        </label>
+      </p>
+
+      <p>
+        <input class="signup" type="submit" value="회원가입" />
+        <input class="initialization" type="reset" value="초기화" />
+      </p>
+    </form>
+    <hr />
+  </body>
+</html>
