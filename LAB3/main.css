@@ -79,6 +79,11 @@ h1 {
   filter: brightness(30%);
 }
 
+.flex_vertical .flex_horizontal .flex_image img {
+  width: 100%;
+  height: 100%;
+}
+
 .flex_image {
   display: flex;
   position: relative;
