@@ -66,6 +66,7 @@ h1 {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  position: relative;
   max-width: 1020px;
   width: 100%;
 }
@@ -87,6 +88,7 @@ h1 {
   margin: 0.5%;
   cursor: pointer;
   transition: transform 2s ease;
+  width: 25%;
 }
 
 .flex_image:hover .textbook_title {
