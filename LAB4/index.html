@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <title>INTERNET-PROGRAMMING SHOP</title>
+    <link rel="stylesheet" href="./main.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="flex_container">
+      <h1 class="header">Welcome to INTERNET-PROGRAMMING SHOP</h1>
+    </div>
+    <div class="flex_container">
+      <div class="linking selected">
+        <a class="no_underline" href="./index.html">메인페이지</a>
+      </div>
+      <div class="linking unselected">
+        <a class="no_underline" href="./login.html">로그인</a>
+      </div>
+      <div class="linking unselected">
+        <a class="no_underline" href="./signup.html">회원가입</a>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="flex_container">
+      <h2 class="first">Products</h2>
+    </div>
+
+    <hr />
+
+    <div class="flex_container">
+      <div class="find_item flex_vertical">
+        <div class="flex_horizontal">
+          <label for="choose_a_category">Choose a category:</label>
+          <select class="filtering" name="category" id="choose_a_category">
+            <option selected>All</option>
+            <option>python</option>
+            <option>c++</option>
+            <option>Java</option>
+            <option>HTML</option>
+          </select>
+        </div>
+        <div class="flex_horizontal">
+          <label for="Enter_search_term">Enter search term:</label>
+          <input
+            class="filtering"
+            type="text"
+            name="search_term"
+            id="Enter_search_term"
+            placeholder="e.g. HTML"
+          />
+        </div>
+        <div class="flex_horizontal">
+          <label for="choose_a_sort">Choose a sort:</label>
+          <select class="filtering" name="sorting" id="choose_a_sort">
+            <option selected>기본순</option>
+            <option>가격 낮은 순</option>
+            <option>가격 높은 순</option>
+          </select>
+        </div>
+        <div class="flex_horizontal">
+          <button class="filtering" id="filter_results">Filter results</button>
+        </div>
+      </div>
+      <div id="main_item" class="item"></div>
+    </div>
+    <h2>Introduction of INTERNET-PROGRAMMING SHOP</h2>
+    <hr />
+    <div class="introduction">
+      <p>
+        Hello, Welcome to INTERNET-PROGRAMMING SHOP Hello, Welcome to
+        INTERNET-PROGRAMMING SHOP Hello, Welcome to INTERNET-PROGRAMMING SHOP
+        Hello, Welcome to INTERNET-PROGRAMMING SHOP Hello, Welcome to
+        INTERNET-PROGRAMMING SHOP Hello, Welcome to INTERNET-PROGRAMMING SHOP
+        Hello, Welcome to INTERNET-PROGRAMMING SHOP Hello, Welcome to
+        INTERNET-PROGRAMMING SHOP Hello, Welcome to INTERNET-PROGRAMMING SHOP
+        Hello, Welcome to INTERNET-PROGRAMMING SHOP Hello, Welcome to
+        INTERNET-PROGRAMMING SHOP Hello, Welcome to INTERNET-PROGRAMMING SHOP
+        Hello, Welcome to INTERNET-PROGRAMMING SHOP Hello, Welcome to
+        INTERNET-PROGRAMMING SHOP Hello, Welcome to INTERNET-PROGRAMMING SHOP
+        Hello, Welcome to INTERNET-PROGRAMMING SHOP Hello, Welcome to
+        INTERNET-PROGRAMMING SHOP Hello, Welcome to INTERNET-PROGRAMMING SHOP
+        Hello, Welcome to INTERNET-PROGRAMMING SHOP Hello, Welcome to
+        INTERNET-PROGRAMMING SHOP Hello, Welcome to INTERNET-PROGRAMMING SHOP
+        Hello, Welcome to INTERNET-PROGRAMMING SHOP Hello, Welcome to
+        INTERNET-PROGRAMMING SHOP Hello, Welcome to INTERNET-PROGRAMMING SHOP
+      </p>
+    </div>
+    <hr />
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

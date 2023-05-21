@@ -1,0 +1,66 @@
+[
+  {
+    "name": "THE C++ PROGRAMMING LANGUAGE",
+    "price": 55.98,
+    "dollars": "$55.98",
+    "image": "cpp_image_1.jpg",
+    "info": "You can learn about C++!",
+    "type": "c++"
+  },
+  {
+    "name": "Advanced C++",
+    "price": 34.0,
+    "dollars": "$34.00",
+    "image": "cpp_image_2.jpg",
+    "info": "You can learn more about C++!",
+    "type": "c++"
+  },
+  {
+    "name": "HTML+CSS+자바스크립트 웹 표준의 정석",
+    "price": 20.14,
+    "dollars": "$20.14",
+    "image": "html_image_1.jpg",
+    "info": "You can learn about basic web programming!",
+    "type": "HTML"
+  },
+  {
+    "name": "The Complete Reference HTML&CSS",
+    "price": 15.18,
+    "dollars": "$15.18",
+    "image": "html_image_2.jpg",
+    "info": "You can learn about HTML&XHTML!",
+    "type": "HTML"
+  },
+  {
+    "name": "JAVA PROGRAMMING FOR BEGINNERS",
+    "price": 13.58,
+    "dollars": "$13.58",
+    "image": "java_image_1.jpg",
+    "info": "You can learn java easily!",
+    "type": "Java"
+  },
+  {
+    "name": "JAVA PROGRAMMING",
+    "price": 6.0,
+    "dollars": "$6.00",
+    "image": "java_image_2.jpg",
+    "info": "You can learn more about java!",
+    "type": "Java"
+  },
+  {
+    "name": "PYTHON PROGRAMMING FOR BEGINNERS",
+    "price": 26.02,
+    "dollars": "$26.02",
+    "image": "python_image_1.jpg",
+    "info": "You can learn python easily!",
+    "type": "python"
+  },
+  {
+    "name": "Programming Python",
+    "price": 43.64,
+    "dollars": "$43.64",
+    "image": "python_image_2.jpg",
+    "info": "You can learn more about python!",
+    "type": "python"
+  }
+]

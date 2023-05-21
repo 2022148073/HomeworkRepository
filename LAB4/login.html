@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="./main.css" type="text/css" />
+    <!--<style type="text/css">
+            h1{font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5em;
+            text-align: center;
+            }
+            div{width: 70px; height: 23px; text-align: center;
+                display: inline-block;}
+            .no_underline{text-decoration-line: none; color: black;}
+            p{margin: 0.5%;}
+            li{list-style-type: none; margin-left: 1.5%;}
+            hr{height: 2px; background-color: black;}
+            .first{margin-top: 5%; font-size: 1.5em;}
+            .unselected{text-decoration: none;}
+            .selected{border-top: 2px solid; color: red; 
+                border-bottom: 2px solid; color: red;
+                font-weight: bolder;}
+            .unselected:hover{font-weight: bolder; 
+                text-decoration: underline;}
+            .check_login{height: 30px; font-size: 1.1em; padding-left: 10px; padding-right: 10px; background-color: cornflowerblue; margin: 0%;}
+            .signup{height: 30px; font-size: 1.1em; padding-left: 10px; padding-right: 10px; background-color: darkcyan; margin: 0%;}
+            .initialization{height: 30px; font-size: 1.1em; padding-left: 10px; padding-right: 10px; background-color: red; margin: 0%;}
+            .signup:hover{font-weight: bolder;}
+            .initialization:hover{font-weight: bolder;}
+
+        </style>-->
+  </head>
+
+  <body>
+    <h1>Welcome to INTERNET-PROGRAMMING SHOP</h1>
+    <div class="flex_container">
+      <div class="linking unselected">
+        <a class="no_underline" href="./index.html">메인페이지</a>
+      </div>
+      <div class="linking selected">
+        <a class="no_underline" href="./login.html">로그인</a>
+      </div>
+      <div class="linking unselected">
+        <a class="no_underline" href="./signup.html">회원가입</a>
+      </div>
+    </div>
+    <hr />
+    <p class="first"><strong>회원 정보 (필수)</strong></p>
+    <form method="post" action="./login.html">
+      <p>
+        <label
+          ><strong>유저 아이디</strong>:
+          <input
+            type="text"
+            name="user_ID"
+            autocomplete="on"
+            placeholder="아이디를 입력하세요"
+            required
+          />
+        </label>
+      </p>
+
+      <p>
+        <label
+          ><strong>비밀번호</strong>:
+          <input
+            type="password"
+            name="user_password"
+            placeholder="비밀번호를 입력하세요"
+            required
+          />
+        </label>
+      </p>
+
+      <p>
+        <input class="check_login" type="submit" value="로그인" />
+        <input
+          class="signup"
+          type="button"
+          onclick="location.href='./signup.html'"
+          value="회원가입"
+        />
+      </p>
+    </form>
+    <hr />
+  </body>
+</html>
