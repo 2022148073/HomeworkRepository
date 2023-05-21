@@ -140,24 +140,34 @@ function load() {
 function show(image_url, product_name, product_str_dollars, product_info) {
   const book = document.createElement("div");
   const image = document.createElement("img");
-  const explain = document.createElement("span");
 
   book.className = "flex_image";
-
-  explain.className = "textbook_title";
-  let str_explain =
-    "이름: &nbsp;" +
-    product_name +
-    "<br><br>가격: &nbsp;" +
-    product_str_dollars +
-    "<br><br>설명: &nbsp;" +
-    product_info;
-  explain.innerHTML = str_explain;
+  book.id = product_name + "/" + product_str_dollars + "/" + product_info;
+  book.addEventListener("click", more_info);
 
   image.src = `image/${image_url}`;
   image.alt = product_name;
 
   item.appendChild(book);
   book.appendChild(image);
-  book.appendChild(explain);
+}
+
+function more_info(b) {
+  let book_ID = b.target.parentNode.id;
+  let list = book_ID.split("/");
+
+  if (book_ID.indexOf("explain: ") === -1) {
+    b.target.parentNode.id = "explain: " + book_ID;
+    const explain = document.createElement("div");
+    explain.className = "textbook_title";
+    let str_explain =
+      "<br><br>이름: &nbsp;" +
+      list[0] +
+      "<br><br>가격: &nbsp;" +
+      list[1] +
+      "<br><br>설명: &nbsp;" +
+      list[2];
+    explain.innerHTML = str_explain;
+    document.getElementById(b.target.parentNode.id).appendChild(explain);
+  }
 }

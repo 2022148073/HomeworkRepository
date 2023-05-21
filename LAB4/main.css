@@ -99,14 +99,6 @@ h1 {
   font-size: 17px;
 }
 
-.flex_image:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.flex_image:hover img {
-  filter: brightness(30%);
-}
-
 .flex_vertical .flex_horizontal .flex_image img {
   width: 100%;
   height: 100%;
@@ -131,20 +123,18 @@ h1 {
   width: 30%;
 }
 
-.flex_image:hover .textbook_title {
-  display: block;
-}
-
 .textbook_title {
-  display: none;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
   position: absolute;
-  left: 40%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 0px;
+  background-color: black;
+  opacity: 0.7;
   color: white;
-  font-size: 15pt;
-  text-align: left;
-  z-index: 4;
+  font-weight: bold;
 }
 
 hr {
